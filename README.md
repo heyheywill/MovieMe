@@ -23,20 +23,17 @@
 > * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold one check-in meeting with your lab TA in addition to the final demo.
 
 ## Project Description
- > Your project description should summarize the project you are proposing. Be sure to include:
- > * Why is it important or interesting to you?
+ ### Why is it interesting?
  >   * As college students, we spend a lot of time with our friends and family watching movies. So much time is wasted trying to decide which movie to watch. With this tool we would be able to help others (and ourselves) figure out what movie to put on in a more efficient manner that is catered towards our interests. Beyond the practical use of the tool, the actual code also intrigues us. We find the idea of customizing results based on the individual to be a complex but engaging challenge. The combination of a functional project and interesting code makes this project for us.
  > 
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
+ ### Languages, Tools, and Technologies
  >   * [C++](https://www.cplusplus.com/) - Used to implement the frontend and backend during the development process.
  >   * [GoogleTest](https://github.com/google/googletest) - Used to create unit tests for classes and function during development.
  >   * [Valgrind](https://www.valgrind.org/) - Used for tracking common issues such as memory leaks and debugging.
- > * What will be the input/output of your project? What are the features that the project provides?
+### Features
  >   * At launch, the user will be able to go through a quick questionnaire about their genre preferences, favorite actors, length of movie, and more. The user will receive these questionaries and respond through the terminal. Through this questionnaire, the program will then generate movie titles that correlate to the user’s preferences. The user will be provided a list of Movies that match the user's preferences. The user can then choose which movie fits their needs by entering the number listed by the movie, and the project will provide additional information including the movie title, movie summary, movie rating, actors and percentage match. All inputs and outputs will be through the terminal.
  > 
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
- > 
- > You also need to set up an empty project board by choosing the  “Automated kanban with review” option on Github. You should also have a Backlog and In testing columns added.
+
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
  > * Create an "Epic" (note) for each feature and each design pattern and assign them to the appropriate team member. Place these in the `Backlog` column
