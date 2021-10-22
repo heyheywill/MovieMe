@@ -32,7 +32,7 @@
  >   * [GoogleTest](https://github.com/google/googletest) - Used to create unit tests for classes and function during development.
  >   * [Valgrind](https://www.valgrind.org/) - Used for tracking common issues such as memory leaks and debugging.
  > * What will be the input/output of your project? What are the features that the project provides?
- >   * At launch, the user will be able to go through a quick questionnaire about their genre preferences, favorite actors, length of movie, and more. Through this questionnaire, the program will then generate movie titles that correlate to the user’s preferences. Features that this project will provide will include the movie title, movie summary, movie rating, and percentage match. 
+ >   * At launch, the user will be able to go through a quick questionnaire about their genre preferences, favorite actors, length of movie, and more. The user will receive these questionaries and respond through the terminal. Through this questionnaire, the program will then generate movie titles that correlate to the user’s preferences. The user will be provided a list of Movies that match the user's preferences. The user can then choose which movie fits their needs by entering the number listed by the movie, and the project will provide additional information including the movie title, movie summary, movie rating, actors and percentage match. All inputs and outputs will be through the terminal.
  > 
  > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
  > 
