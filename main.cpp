@@ -9,6 +9,8 @@ using namespace std;
 
 int main() {
 
+	Questionnaire ques;
 
-
+	ques.presentQuestions();
+	ques.presentAnswers();
 }

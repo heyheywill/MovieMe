@@ -10,14 +10,16 @@ using namespace std;
 class Questionnaire {
 
 	private:
-	
-
-	public:
 		vector<string> questions;
 		vector<string> answers;
+
+	public:
+		Questionnaire();
 		string getFavoriteActor();
 		string getFavoriteGenre();
 		string getFavoriteMovie();
+		void presentQuestions();
+		void presentAnswers();
 };
 
 
