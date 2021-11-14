@@ -161,7 +161,7 @@ class MovieList : public Movie{
         }
 	else if(count == 8){
 	    getline(movieRow, csvElement, ',');
-	    movieObject.duration = stoi(csvElement);
+	    movieObject.certificate = (csvElement);
 	}
         else{
             getline(movieRow, csvElement, '\n');
