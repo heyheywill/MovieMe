@@ -55,7 +55,7 @@ class MovieList : public Movie{
             if(movieRow.peek() == '"'){
                 movieRow >> std::quoted(csvElement);
                 string discard;
-                getline(movieList, discard, ',');
+                getline(movieRow, discard, ',');
                 string word = "";
                 for(auto x: csvElement)
                 {
@@ -76,31 +76,31 @@ class MovieList : public Movie{
                 movieObject.genre.push_back(word);
             }
             else{
-                getline(movieList, csvElement, ',');
+                getline(movieRow, csvElement, ',');
                 movieObject.genre.push_back(csvElement);
             }
         }
         else if(count == 3){
-            if(movieList.peek() == '"'){
-                movieList >> std::quoted(csvElement);
+            if(movieRow.peek() == '"'){
+                movieRow >> std::quoted(csvElement);
                 string discard;
-                getline(movieList, discard, ',');
+                getline(movieRow, discard, ',');
                 movieObject.description = csvElement;
             }
             else{
-                getline(movieList, csvElement, ',');
+                getline(movieRow, csvElement, ',');
                 movieObject.description = csvElement;
             }
         }
         else if(count == 4){
-            getline(movieList, csvElement, ',');
+            getline(movieRow, csvElement, ',');
             movieObject.director = csvElement;
         }
         else if(count == 5){
-            if(movieList.peek() == '"'){
-                movieList >> std::quoted(csvElement);
+            if(movieRow.peek() == '"'){
+                movieRow >> std::quoted(csvElement);
                 string discard;
-                getline(movieList, discard, ',');
+                getline(movieRow, discard, ',');
                 string word2 = "";
                 for(auto y: csvElement)
                 {
@@ -121,20 +121,20 @@ class MovieList : public Movie{
                 movieObject.actors.push_back(word2);
             }
             else{
-                getline(movieList, csvElement, ',');
+                getline(movieRow, csvElement, ',');
                 movieObject.actors.push_back(csvElement);
             }
         }
         else if(count == 6){
-            getline(movieList, csvElement, ',');
+            getline(movieRow, csvElement, ',');
             movieObject.year = stoi(csvElement);
         }
         else if(count == 7){
-            getline(movieList, csvElement, ',');
+            getline(movieRow, csvElement, ',');
             movieObject.duration = stoi(csvElement);
         }
         else{
-            getline(movieList, csvElement, '\n');
+            getline(movieRow, csvElement, '\n');
             movieObject.rating = stod(csvElement);
         }
         count++;
