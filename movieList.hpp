@@ -21,7 +21,7 @@ class MovieList : public Movie{
 	void database(string str){
    	 int count = 0;
    	 Movie movieObject;
-   	 ifstream movieList;
+   	 ifstream movieRow;
    	 movieRow.open(str);
     
     while(movieRow >> std::ws){
