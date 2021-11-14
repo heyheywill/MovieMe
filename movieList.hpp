@@ -26,11 +26,12 @@ class MovieList : public Movie{
     
     while(movieRow >> std::ws){
         string csvElement;
-        if(count == 9){
+        if(count == 10){
             count = 0;
             movieList.push_back(movieObject);
             movieObject.genre.clear();
             movieObject.actors.clear();
+	    movieObject.director.clear();
         }
         if(count == 0){
             getline(movieRow, csvElement, ',');
@@ -93,8 +94,33 @@ class MovieList : public Movie{
             }
         }
         else if(count == 4){
-            getline(movieRow, csvElement, ',');
-            movieObject.director = csvElement;
+            if(movieRow.peek() == '"'){
+                movieRow >> std::quoted(csvElement);
+                string discard;
+                getline(movieRow, discard, ',');
+                string word3 = "";
+                for(auto y: csvElement)
+                {
+                    if(y == ','){
+                        if(word3.at(0) == ' '){
+                            word3 = word3.substr(1, word3.size());
+                        }
+                        movieObject.director.push_back(word3);
+                        word3 = "";
+                    }
+                    else{
+                        word3 = word3 + y;
+                    }
+                }
+                if(word3.at(0) == ' '){
+                    word3 = word3.substr(1, word3.size());
+                }
+                movieObject.director.push_back(word3);
+            }
+            else{
+                getline(movieRow, csvElement, ',');
+                movieObject.director.push_back(csvElement);
+            }
         }
         else if(count == 5){
             if(movieRow.peek() == '"'){
@@ -133,6 +159,10 @@ class MovieList : public Movie{
             getline(movieRow, csvElement, ',');
             movieObject.duration = stoi(csvElement);
         }
+	else if(count == 8){
+	    getline(movieRow, csvElement, ',');
+	    movieObject.duration = stoi(csvElement);
+	}
         else{
             getline(movieRow, csvElement, '\n');
             movieObject.rating = stod(csvElement);
