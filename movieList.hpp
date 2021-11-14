@@ -38,7 +38,7 @@ class MovieList : public Movie{
             if(csvElement.empty()){
                 break;
             }
-            movieObject.rank = (stoi(csvElement));
+            movieObject.rank = (stoi(csvElement))+1;
         }
         else if(count == 1){
             if(movieRow.peek() == '"'){
