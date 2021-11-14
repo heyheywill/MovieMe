@@ -1,0 +1,32 @@
+#ifndef __MOVIE_HPP_
+#define __MOVIE_HPP_
+
+#include <iostream>
+#include <sstream>
+#include <fstream>
+#include <cstdlib>
+#include <vector>
+#include <algorithm>
+#include <cctype>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+class Movie 
+{
+private:
+public:
+    int rank;
+    string title;
+    vector<string> genre;
+    string description;
+    string director;
+    vector<string> actors;
+    int year;
+    int duration;
+    double rating;
+    Movie(){
+    }
+};
+#endif

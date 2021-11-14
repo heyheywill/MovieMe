@@ -1,0 +1,145 @@
+#ifndef __MOVIELIST_HPP_
+#define __MOVIELIST_HPP_
+
+#include <iostream>
+#include <sstream>
+#include <fstream>
+#include <cstdlib>
+#include <vector>
+#include <algorithm>
+#include <cctype>
+#include <string>
+#include <iomanip>
+#include "movie.hpp"
+
+using namespace std;
+
+class MovieList : public Movie{
+   public:
+	vector<Movie> row2;
+   public:
+	void database(string str){
+   	 int count = 0;
+   	 Movie movieObject;
+   	 ifstream movieList;
+   	 movieList.open(str);
+    
+    while(movieList >> std::ws){
+        string csvElement;
+        if(count == 9){
+            count = 0;
+            row2.push_back(movieObject);
+            movieObject.genre.clear();
+            movieObject.actors.clear();
+        }
+        if(count == 0){
+            getline(movieList, csvElement, ',');
+            if(csvElement.empty()){
+                break;
+            }
+            movieObject.rank = (stoi(csvElement));
+        }
+        else if(count == 1){
+            if(movieList.peek() == '"'){
+                movieList >> std::quoted(csvElement);
+                string discard;
+                getline(movieList, discard, ',');
+                movieObject.title = csvElement;
+            }
+            else{
+                getline(movieList, csvElement, ',');
+                movieObject.title = csvElement;
+            }
+        }
+        else if(count == 2){
+            if(movieList.peek() == '"'){
+                movieList >> std::quoted(csvElement);
+                string discard;
+                getline(movieList, discard, ',');
+                string word = "";
+                for(auto x: csvElement)
+                {
+                    if(x == ','){
+                        if(word.at(0) == ' '){
+                            word = word.substr(1, word.size());
+                        }
+                        movieObject.genre.push_back(word);
+                        word = "";
+                    }
+                    else{
+                        word = word + x;
+                    }
+                }
+                if(word.at(0) == ' '){
+                    word = word.substr(1, word.size());
+                }
+                movieObject.genre.push_back(word);
+            }
+            else{
+                getline(movieList, csvElement, ',');
+                movieObject.genre.push_back(csvElement);
+            }
+        }
+        else if(count == 3){
+            if(movieList.peek() == '"'){
+                movieList >> std::quoted(csvElement);
+                string discard;
+                getline(movieList, discard, ',');
+                movieObject.description = csvElement;
+            }
+            else{
+                getline(movieList, csvElement, ',');
+                movieObject.description = csvElement;
+            }
+        }
+        else if(count == 4){
+            getline(movieList, csvElement, ',');
+            movieObject.director = csvElement;
+        }
+        else if(count == 5){
+            if(movieList.peek() == '"'){
+                movieList >> std::quoted(csvElement);
+                string discard;
+                getline(movieList, discard, ',');
+                string word2 = "";
+                for(auto y: csvElement)
+                {
+                    if(y == ','){
+                        if(word2.at(0) == ' '){
+                            word2 = word2.substr(1, word2.size());
+                        }
+                        movieObject.actors.push_back(word2);
+                        word2 = "";
+                    }
+                    else{
+                        word2 = word2 + y;
+                    }
+                }
+                if(word2.at(0) == ' '){
+                    word2 = word2.substr(1, word2.size());
+                }
+                movieObject.actors.push_back(word2);
+            }
+            else{
+                getline(movieList, csvElement, ',');
+                movieObject.actors.push_back(csvElement);
+            }
+        }
+        else if(count == 6){
+            getline(movieList, csvElement, ',');
+            movieObject.year = stoi(csvElement);
+        }
+        else if(count == 7){
+            getline(movieList, csvElement, ',');
+            movieObject.duration = stoi(csvElement);
+        }
+        else{
+            getline(movieList, csvElement, '\n');
+            movieObject.rating = stod(csvElement);
+        }
+        count++;
+    }
+}
+};
+
+#endif
