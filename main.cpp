@@ -14,8 +14,8 @@
 int main() {
 
 	MovieList testing;
-	testing.database("test.csv");
-	cout << testing.movieList.at(0).title << endl;
-	cout << testing.movieList.at(999).title << endl;
+	testing.database("IMDBtop1000.csv");
+	cout << testing.movieList.at(0).title << " directed by " << testing.movieList.at(0).director.at(0) << endl;
+	cout << testing.movieList.at(999).title << " directed by " << testing.movieList.at(999).director.at(0) <<  endl;
 
 }
