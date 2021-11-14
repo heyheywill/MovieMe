@@ -13,9 +13,9 @@
 
 int main() {
 
-	MovieList movieList;
-	movieList.database("test.csv");
-	cout << movieList.row2.at(0).title << endl;
-	cout << movieList.row2.at(999).title << endl;
+	MovieList testing;
+	testing.database("test.csv");
+	cout << testing.movieList.at(0).title << endl;
+	cout << testing.movieList.at(999).title << endl;
 
 }
