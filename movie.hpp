@@ -21,10 +21,11 @@ public:
     string title;
     vector<string> genre;
     string description;
-    string director;
+    vector<string> director;
     vector<string> actors;
     int year;
     int duration;
+    string certificate;
     double rating;
     Movie(){
     }
