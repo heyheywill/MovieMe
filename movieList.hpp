@@ -16,44 +16,44 @@ using namespace std;
 
 class MovieList : public Movie{
    public:
-	vector<Movie> row2;
+	vector<Movie> movieList;
    public:
 	void database(string str){
    	 int count = 0;
    	 Movie movieObject;
    	 ifstream movieList;
-   	 movieList.open(str);
+   	 movieRow.open(str);
     
-    while(movieList >> std::ws){
+    while(movieRow >> std::ws){
         string csvElement;
         if(count == 9){
             count = 0;
-            row2.push_back(movieObject);
+            movieList.push_back(movieObject);
             movieObject.genre.clear();
             movieObject.actors.clear();
         }
         if(count == 0){
-            getline(movieList, csvElement, ',');
+            getline(movieRow, csvElement, ',');
             if(csvElement.empty()){
                 break;
             }
             movieObject.rank = (stoi(csvElement));
         }
         else if(count == 1){
-            if(movieList.peek() == '"'){
-                movieList >> std::quoted(csvElement);
+            if(movieRow.peek() == '"'){
+                movieRow >> std::quoted(csvElement);
                 string discard;
-                getline(movieList, discard, ',');
+                getline(movieRow, discard, ',');
                 movieObject.title = csvElement;
             }
             else{
-                getline(movieList, csvElement, ',');
+                getline(movieRow, csvElement, ',');
                 movieObject.title = csvElement;
             }
         }
         else if(count == 2){
-            if(movieList.peek() == '"'){
-                movieList >> std::quoted(csvElement);
+            if(movieRow.peek() == '"'){
+                movieRow >> std::quoted(csvElement);
                 string discard;
                 getline(movieList, discard, ',');
                 string word = "";
