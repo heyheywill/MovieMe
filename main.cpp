@@ -13,16 +13,14 @@
 int main() {
 
 	
-	Questionnaire ques;
-	ques.presentQuestions();
-	ques.presentAnswers();
+	Questionnaire testQues;
+	testQues.presentQuestions();
+	testQues.presentAnswers();
 	
 
 
-/*
 	MovieList testing;
 	testing.database("IMDBtop1000.csv");
 	cout << testing.movieList.at(0).title << " directed by " << testing.movieList.at(0).director.at(0) << endl;
 	cout << testing.movieList.at(999).title << " directed by " << testing.movieList.at(999).director.at(0) <<  endl;
-*/
 }
