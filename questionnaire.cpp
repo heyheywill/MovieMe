@@ -2,7 +2,7 @@
 
 Questionnaire::Questionnaire() {
 	
-	questions = {"What is your favorite movie?", "What is your favorite movie genre?", "Who is your favorite actor?"};
+	questions = {"What is your favorite movie? (i.e '21 Jump Street')", "What is your favorite movie genre? ('Romance', 'Comedy', 'Sci-Fi', 'Horror', 'Action')", "Who is your favorite actor? ('Tom Cruise', 'Ali Shaikh', 'Abdelrahim Hentabli')"};
 	answers = {};
 	
 }
@@ -26,4 +26,17 @@ void Questionnaire::presentAnswers() {
 		cout << endl;
 	
 	}
+}
+
+string Questionnaire::getFavoriteMovie() {
+	return answers.at(0);	
+}
+
+string Questionnaire::getFavoriteGenre() {
+	return answers.at(1);
+}
+
+
+string Questionnaire::getFavoriteActor() {
+	return answers.at(2);
 }

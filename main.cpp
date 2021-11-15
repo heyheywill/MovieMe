@@ -1,16 +1,28 @@
 #include <iostream>
-#include "movie.hpp"
+#include <sstream>
+#include <fstream>
+#include <cstdlib>
+#include <vector>
+#include <algorithm>
+#include <cctype>
+#include <string>
+#include <iomanip>
 #include "movieList.hpp"
+#include "movie.hpp"
 #include "questionnaire.hpp"
-
-
-
-using namespace std;
-
 int main() {
 
+	
 	Questionnaire ques;
-
 	ques.presentQuestions();
 	ques.presentAnswers();
+	
+
+
+/*
+	MovieList testing;
+	testing.database("IMDBtop1000.csv");
+	cout << testing.movieList.at(0).title << " directed by " << testing.movieList.at(0).director.at(0) << endl;
+	cout << testing.movieList.at(999).title << " directed by " << testing.movieList.at(999).director.at(0) <<  endl;
+*/
 }
