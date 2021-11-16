@@ -40,3 +40,7 @@ string Questionnaire::getFavoriteGenre() {
 string Questionnaire::getFavoriteActor() {
 	return answers.at(2);
 }
+
+vector<string> Questionnaire::returnAnswers() {
+	return answers;
+}
