@@ -18,6 +18,7 @@ class Questionnaire {
 		string getFavoriteActor();
 		string getFavoriteGenre();
 		string getFavoriteMovie();
+		vector<string> returnAnswers();
 		void presentQuestions();
 		void presentAnswers();
 };
