@@ -28,6 +28,8 @@
  
 ## Design Patterns
 
+![Phase 2](https://user-images.githubusercontent.com/73146586/142050830-5281b7d9-9106-4c34-a166-609bf0cb85ad.png)
+
  ###  1. Strategy Design Pattern
  *   We chose this design pattern since it allows us to specify user preference based on movie attributes. If someone wants a movie based on genre, actors, directors, or etc., we are able to provide the user the results of each individual attributes. We can also combine the strategies to create an even more targeted search such as wanting both a specific genre and actor. This design pattern helped us write better code since it allows us to isolate code, data, and algorithms into a class hierarchy that improves on readablity and brevity.
  ###   2. Singleton Design Pattern
