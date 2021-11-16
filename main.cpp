@@ -13,6 +13,7 @@
 #include "sortLists.hpp"
 #include "byGenre.hpp"
 #include "byActor.hpp"
+#include "csvName.hpp"
 using namespace std;
 int main() {
 
@@ -24,7 +25,7 @@ int main() {
 
 
 	MovieList testing;
-	testing.database("IMDBtop1000.csv");
+	testing.database(csvName::getInstance().String());
 	cout << testing.movieList.at(0).title << " directed by " << testing.movieList.at(0).director.at(0) << endl;
 	cout << testing.movieList.at(999).title << " directed by " << testing.movieList.at(999).director.at(0) <<  endl;
 	
