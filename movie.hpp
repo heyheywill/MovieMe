@@ -1,5 +1,5 @@
-#ifndef __MOVIE_HPP_
-#define __MOVIE_HPP_
+#ifndef __MOVIE_HPP__
+#define __MOVIE_HPP__
 
 #include <iostream>
 #include <sstream>
