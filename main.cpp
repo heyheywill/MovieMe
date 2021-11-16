@@ -12,7 +12,7 @@
 #include "questionnaire.hpp"
 #include "sortLists.hpp"
 #include "byGenre.hpp"
-
+#include "byActor.hpp"
 using namespace std;
 int main() {
 
@@ -33,6 +33,7 @@ int main() {
 	vector<Movie> myList = test1.getPreferences(test1.dataBase, test1.userAns);
 
 
+
 	for(int i = 0; i < myList.size(); ++i) {
 		cout << "TITLE: " << myList.at(i).title << endl;
 		cout << "Genres: ";
@@ -49,4 +50,26 @@ int main() {
 	
 	}
 
+	cout << "==================================================================================" << endl;	
+
+	vector<string> myvec2 = testQues.returnAnswers();
+	byActor test2(testing.movieList, myvec2);
+	vector<Movie> myList2  = test2.getPreferences(test2.dataBase, test2.userAns);
+
+	
+	for(int i = 0; i < myList2.size(); ++i) {
+		cout << "TITLE: " << myList2.at(i).title << endl;
+		cout << "Actors: ";
+		for(int j =0; j < myList2.at(i).actors.size(); ++j) {
+			if(j < myList2.at(i).actors.size()-1 ) {
+				cout << myList2.at(i).actors.at(j) << ", ";	
+			}
+			else {
+				cout << myList2.at(i).actors.at(j) << endl;
+			}
+		}
+		cout << endl;
+		cout << endl;
+	
+	}
 }
