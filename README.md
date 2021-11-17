@@ -33,7 +33,7 @@
  ###  1. Strategy Design Pattern
  *   We chose this design pattern since it allows us to specify user preference based on movie attributes. If someone wants a movie based on genre, actors, directors, or etc., we are able to provide the user the results of each individual attributes. We can also combine the strategies to create an even more targeted search such as wanting both a specific genre and actor. This design pattern helped us write better code since it allows us to isolate code, data, and algorithms into a class hierarchy that improves on readablity and brevity.
  ###   2. Singleton Design Pattern
- *   We chose this creational design pattern since it ensures to the client and developer which .csv will be used for the whole program. By implementing singleton, we are able to create a single instance that will be used to comprise our movieList. Our singleton class contains a string of the .csv file name. When the instance is function called, we return the .csv file name. Since the object can not be overwritten, testing code between pulls and merges ensures no compilation error will occur due to a "missing" .csv file. 
+ *   We chose this creational design pattern since it ensures to the client and developer which .csv will be used for the whole program. By implementing singleton, we are able to create a single instance that will be used to comprise our movieList. Our singleton class contains a string of the .csv file name. When the instance is function called, we return the .csv file name. Since the object can not be overwritten, testing code between pulls and merges ensures no compilation error will occur due to a "missing" .csv file. This singleton class acts as a movie database.
 
 
  
