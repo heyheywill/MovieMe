@@ -24,24 +24,19 @@
 ## Class Diagram
 <img width="750" alt="Screen Shot 2021-11-08 at 7 05 43 PM" src="https://user-images.githubusercontent.com/63078485/140856129-f02bee47-a424-44a4-bc67-f0eebcf634d2.png">
 
- ### 1. Movie
+ ### Description
   *   The Movie class provides all the data members that a movie will contain, such as title, actors, genre, and etc. 
- ### 2. MovieList
   *   MovieList is a vector of Movies that will be filled after reading in a .csv file.
- ### 3. *SortLists
   * SortLists class is a base abstract class that all of our algorithms will derive from so that we can specifiy what we want to search for in movieList
- ### 4. byGenre, byActor, and byRating 
   *   byGenre, byActor, and byRating are classes that will search for a movie that contains the respective characteristic. For instance, byGenre will search for movies that contain a user wanted genre (Ex. Comedy). Another example, byActor will search for movies that contain a user wanted actor (Ex. "Daniel Craig").
- ### 5. Outputter
   *   Class Outputter will output the list of movies that meet the user's criteria. 
- ### 6. Questionaire
   * Ask the user movie related questions that we will then save and use in our algorithms.
  
 ## Design Patterns
 
 ![Phase 2 (1)](https://user-images.githubusercontent.com/73146586/142709298-b3e785cd-d3c5-4e7c-9373-182d4d7b60ee.png)
 
-### 7. CsvName
+### Added CsvName
   *  created singleton class so that the .csv database is accessable from anywhere in the program. Returns the .csv file that will be used for movieList.
 
  ###  1. Strategy Design Pattern
