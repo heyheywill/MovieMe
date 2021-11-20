@@ -37,7 +37,7 @@
 ![Phase 2 (1)](https://user-images.githubusercontent.com/73146586/142709298-b3e785cd-d3c5-4e7c-9373-182d4d7b60ee.png)
 
 ### Added CsvName
-  *  created singleton class so that the .csv database is accessable from anywhere in the program. Returns the .csv file that will be used for movieList.
+  *  created singleton class so that the .csv database is accessible from anywhere in the program. Returns the .csv file that will be used for movieList.
 
  ###  1. Strategy Design Pattern
  *   We chose this design pattern since it allows us to specify user preference based on movie attributes. If someone wants a movie based on genre, actors, directors, or etc., we are able to provide the user the results of each individual attributes. We can also combine the strategies to create an even more targeted search such as wanting both a specific genre and actor. This design pattern helped us write better code since it allows us to isolate code, data, and algorithms into a class hierarchy that improves on readablity and brevity.
