@@ -24,23 +24,26 @@
 ## Class Diagram
 <img width="750" alt="Screen Shot 2021-11-08 at 7 05 43 PM" src="https://user-images.githubusercontent.com/63078485/140856129-f02bee47-a424-44a4-bc67-f0eebcf634d2.png">
 
-
+ ### Description
+  *   The Movie class provides all the data members that a movie will contain, such as title, actors, genre, and etc. 
+  *   MovieList is a vector of Movies that will be filled after reading in a .csv file.
+  * SortLists class is a base abstract class that all of our algorithms will derive from so that we can specifiy what we want to search for in movieList
+  *   byGenre, byActor, and byRating are classes that will search for a movie that contains the respective characteristic. For instance, byGenre will search for movies that contain a user wanted genre (Ex. Comedy). Another example, byActor will search for movies that contain a user wanted actor (Ex. "Daniel Craig").
+  *   Class Outputter will output the list of movies that meet the user's criteria. 
+  * Ask the user movie related questions that we will then save and use in our algorithms.
  
- > ## Phase III
- > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
- > * Before the meeting you should perform a sprint plan like you did in Phase II.
- > * You should also update this README file by adding the following:
- >   * What design patterns did you use? For each design pattern you must explain in 4-5 sentences:
- >     * Why did you pick this pattern? And what feature did you implement with it?
- >     * How did the design pattern help you write better code?
- >   * An updated class diagram that reflects the design patterns you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
- >   * Make sure your README file (and Project board) are up-to-date reflecting the current status of your project. Previous versions of the README file should still be visible through your commit history.
-> 
-> During the meeting with your TA you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- > * What tasks you are planning for this next sprint.
+## Design Patterns
+
+![Phase 2 (1)](https://user-images.githubusercontent.com/73146586/142709298-b3e785cd-d3c5-4e7c-9373-182d4d7b60ee.png)
+
+### Added CsvName
+  *  created singleton class so that the .csv database is accessible from anywhere in the program. Returns the .csv file that will be used for movieList.
+
+ ###  1. Strategy Design Pattern
+ *   We chose this design pattern since it allows us to specify user preference based on movie attributes. If someone wants a movie based on genre, actors, directors, or etc., we are able to provide the user the results of each individual attributes. We can also combine the strategies to create an even more targeted search such as wanting both a specific genre and actor. This design pattern helped us write better code since it allows us to isolate code, data, and algorithms into a class hierarchy that improves on readablity and brevity.
+ ###   2. Singleton Design Pattern
+ *   We chose this creational design pattern since it ensures to the client and developer which .csv will be used for the whole program. By implementing singleton, we are able to create a single instance that will be used to comprise our movieList. Our singleton class contains a string of the .csv file name. When the instance is function called, we return the .csv file name. Since the object can not be overwritten, testing code between pulls and merges ensures no compilation error will occur due to a "missing" .csv file. This singleton class acts as a movie database.
+
 
  
  > ## Final deliverable

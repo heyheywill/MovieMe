@@ -21,6 +21,8 @@ class Questionnaire {
 		vector<string> returnAnswers();
 		void presentQuestions();
 		void presentAnswers();
+		void pushBackAnswer(string);
+		string returnFirstRecc();
 };
 
 
