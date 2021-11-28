@@ -44,3 +44,8 @@ string Questionnaire::getFavoriteActor() {
 vector<string> Questionnaire::returnAnswers() {
 	return answers;
 }
+
+void Questionnaire::pushBackAnswer(string ans) {
+	this->answers.push_back(ans);
+}
+
