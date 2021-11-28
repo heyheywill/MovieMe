@@ -9,6 +9,7 @@ ADD_EXECUTABLE(questionnaire
 	questionnaire.cpp
 	byGenre.cpp
 	byActor.cpp
+	outputter.cpp
 )
 
 ADD_EXECUTABLE(test
