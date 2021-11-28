@@ -10,6 +10,8 @@
 #include <cctype>
 #include <string>
 #include <iomanip>
+#include <ostream>
+#include <sstream>
 #include "movie.hpp"
 
 using namespace std;
@@ -18,6 +20,20 @@ class MovieList : public Movie{
    public:
 	vector<Movie> movieList;
    public:
+
+	void printMovies(std::ostream& out) const{
+	   for(int i = 0; i < movieList.size(); ++i){
+		out << movieList.at(i).title;
+		out << "\n";   
+	   }
+	}
+
+	Movie getMovie(int index){
+		return movieList.at(index);
+	}
+	int getSize(){
+		return movieList.size();
+	}
 	void database(string str){
    	 int count = 0;
    	 Movie movieObject;
@@ -38,7 +54,7 @@ class MovieList : public Movie{
             if(csvElement.empty()){
                 break;
             }
-            movieObject.rank = (stoi(csvElement));
+            movieObject.rank = (stoi(csvElement))+1;
         }
         else if(count == 1){
             if(movieRow.peek() == '"'){
