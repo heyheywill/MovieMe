@@ -8,6 +8,9 @@
 #include "questionnaire.hpp"
 #include <fstream>
 #include <iostream>
+#include <sstream>
+//MovieList TESTINGMOVIE(csvName::getInstance().String());
+
 TEST(questionnaireTest, checkLoadedQuestions) {
 	Questionnaire test;
 	
@@ -23,6 +26,18 @@ TEST(questionnaireTest, checkLoadedQuestions) {
 	EXPECT_EQ("21 Jump Street", test.getFavoriteMovie());
 	EXPECT_EQ("Romance", test.getFavoriteGenre());
 	EXPECT_EQ("Tom Cruise", test.getFavoriteActor());
+}
+
+TEST(databaseTest, checkFirstMovie){
+	MovieList test;
+	test.database(csvName::getInstance().String());
+	EXPECT_EQ("The Shawshank Redemption", test.getMovie(0).title);
+}
+
+TEST(databaseTest, checkLastMovie){
+	MovieList test;
+	test.database(csvName::getInstance().String());
+	EXPECT_EQ("The 39 Steps", test.getMovie(test.getSize()-1).title);
 }
 
 TEST(byGenreTest, checkIfReccRomance) {
