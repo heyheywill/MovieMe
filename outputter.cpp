@@ -43,3 +43,18 @@ void Outputter::outputByActor(vector<Movie> myList) {
 	
 	}
 }
+
+
+void Outputter::outputByRating(vector<Movie> myList) {
+	cout << endl;
+	cout << "Your Reccomendations" << endl;
+	cout << endl;	
+	for(int i = 0; i < myList.size(); ++i) {
+		cout << "TITLE: " << myList.at(i).title << endl;
+		cout << "Rating: " << myList.at(i).rating << endl;
+		cout << endl;
+	}
+		cout << endl;
+		cout << endl;
+
+}

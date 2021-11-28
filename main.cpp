@@ -15,6 +15,7 @@
 #include "byActor.hpp"
 #include "csvName.hpp"
 #include "outputter.hpp"
+#include "byRating.hpp"
 using namespace std;
 int main() {
 
@@ -39,7 +40,10 @@ int main() {
 	vector<Movie> myList = test1.getPreferences(test1.dataBase, test1.userAns);		
 	byActor list2(testing.movieList, myvec);
 	vector<Movie> myActorList = list2.getPreferences(list2.dataBase, list2.userAns);
-	
+	byRating list3(testing.movieList, myvec);
+	vector<Movie> myRatingList = list3.getPreferences(list3.dataBase, list3.userAns);
+		
+
 	Outputter out;	
 
 	switch (answer) {
@@ -50,5 +54,8 @@ int main() {
 	case 2:
 		out.outputByActor(myActorList);
 		break;
-	}	
+	case 3:
+		out.outputByRating(myRatingList);
+		break;
+	}
 }
