@@ -11,6 +11,7 @@ ADD_EXECUTABLE(questionnaire
 	byActor.cpp
 	outputter.cpp
 	byRating.cpp
+	movieList.cpp
 )
 
 ADD_EXECUTABLE(test
@@ -18,6 +19,7 @@ ADD_EXECUTABLE(test
 	questionnaire.cpp
 	byGenre.cpp
 	byActor.cpp
+	movieList.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
