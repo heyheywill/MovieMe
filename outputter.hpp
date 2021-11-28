@@ -10,6 +10,7 @@ class Outputter : public Movie {
 public:
 	void outputByGenre(vector<Movie>);
 	void outputByActor(vector<Movie>);
+	void outputByRating(vector<Movie>);
 
 };
 
