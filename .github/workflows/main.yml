@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, whe038/testing, whe038/movieList_database, alihshaikh/questionnaireTesting, alihshaikh/questionnaire]
+    branches: [ master, whe038/testing, whe038/movieList_database, alihshaikh/questionnaireTesting, alihshaikh/questionnaire, alishaikh/questionnaire, alihshaikh/projectTemplate]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
