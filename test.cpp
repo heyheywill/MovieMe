@@ -6,7 +6,6 @@
 #include "sortLists.hpp"
 #include "gtest/gtest.h"
 #include "questionnaire.hpp"
-#include "IMDBtop1000.csv"
 #include <fstream>
 #include <iostream>
 #include <sstream>
