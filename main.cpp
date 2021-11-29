@@ -29,7 +29,8 @@ int main() {
 
 	MovieList testing;
 	testing.database(csvName::getInstance().String());
-	//testing.printMovies(std::cout);	
+	//testing.printMovies(std::cout);
+	//testing main.yml	
 
 	cout << "Would you like to be reccomended movies via actor (1), genre (2), or rating (3)?" << endl;
 	
