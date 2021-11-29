@@ -9,7 +9,6 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
-//MovieList TESTINGMOVIE(csvName::getInstance().String());
 
 TEST(questionnaireTest, checkLoadedQuestions) {
 	Questionnaire test;
@@ -32,6 +31,12 @@ TEST(databaseTest, checkFirstMovie){
 	MovieList test;
 	test.database(csvName::getInstance().String());
 	EXPECT_EQ("The Shawshank Redemption", test.getMovie(0).title);
+}
+
+TEST(databaseTest, checkMiddleMovie){
+	MovieList test;
+	test.database(csvName::getInstance().String());
+	EXPECT_EQ("Fantastic Mr. Fox", test.getMovie((test.getSize()-1)/2).title);
 }
 
 TEST(databaseTest, checkLastMovie){
