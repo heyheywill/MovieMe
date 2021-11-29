@@ -1,5 +1,5 @@
 
-# MovieMe
+# MovieMe [![CI](https://github.com/cs100/final-project-whe038-ashai014-npasr001-mneru002/actions/workflows/main.yml/badge.svg)](https://github.com/cs100/final-project-whe038-ashai014-npasr001-mneru002/actions/workflows/main.yml)
   Authors: [Ali Shaikh](https://github.com/alihshaikh), 
            [Mihika Nerurkar](https://github.com/mneru002),
            [William He](https://github.com/heyheywill),
@@ -7,7 +7,6 @@
           
 
  
-
 ## Project Description
  ### Why is it interesting?
   * As college students, we spend a lot of time with our friends and family watching movies. So much time is wasted trying to decide which movie to watch. With this tool we would be able to help others (and ourselves) figure out what movie to put on in a more efficient manner that is catered towards our interests. Beyond the practical use of the tool, the actual code also intrigues us. We find the idea of customizing results based on the individual to be a complex but engaging challenge. The combination of a functional project and interesting code makes this project for us.
