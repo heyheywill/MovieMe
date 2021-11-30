@@ -61,5 +61,5 @@
  
  ```to run program: cmake3. ; make ; ./questionnaire (used as seperate comnmands) ```
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+ > Our project was validated through Github Actions and unit testing. Our status badge for Github Actions is on the top of the README.
  
