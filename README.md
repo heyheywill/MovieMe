@@ -60,5 +60,5 @@
  
  ```to run program: cmake3 . ; make ; ./questionnaire (used as seperate comnmands) ```
  ## Testing
- * Our project was validated through Github Actions and unit testing. Our status badge for Github Actions is on the top of the README.
+ * Our project was validated through Github Actions and unit testing through GoogleTests. Our status badge for Github Actions is on the top of the README.
  
