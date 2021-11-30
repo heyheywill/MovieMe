@@ -31,7 +31,7 @@
   *   byGenre, byActor, and byRating are classes that will search for a movie that contains the respective characteristic. For instance, byGenre will search for movies that contain a user wanted genre (Ex. Comedy). Another example, byActor will search for movies that contain a user wanted actor (Ex. "Daniel Craig").
   *  Class Outputter will output the list of movies that meet the user's criteria. 
   * Ask the user movie related questions that we will then save and use in our algorithms.
-  * Created singleton class so that the .csv database is accessible from anywhere in the program. Returns the .csv file that will be used for movieList.
+  * CsvName class ensures that .csv database is accessible from anywhere in the program. Returns the .csv file that will be used for movieList.
   * Questionnaire class asks user a series of questions to answer, saves the user's answers, and then allows the algorithms to use the answers to suggest movies.
  
 ## Design Patterns
