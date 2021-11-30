@@ -2,7 +2,7 @@
 
 Questionnaire::Questionnaire() {
 	
-	questions = {"What is your favorite movie? (i.e '21 Jump Street')", "What is your favorite movie genre? ('Romance', 'Comedy', 'Sci-Fi', 'Horror', 'Action')", "Who is your favorite actor? ('Tom Cruise', 'Edward Zhu', 'Abdelrahim Hentabli')"};
+	questions = {"What is your favorite movie? (i.e '21 Jump Street')", "What is your favorite movie genre? ('Romance', 'Comedy', 'Sci-Fi', 'Horror', 'Action')", "Who is your favorite actor? ('Tom Cruise', 'Daniel Craig', 'Johnny Depp', 'Edward Zhu', 'Abdelrahim Hentabli')"};
 	answers = {};
 	
 }
