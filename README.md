@@ -51,11 +51,12 @@
  ## Screenshots
 <img width="829" alt="Screen Shot 2021-11-29 at 8 11 18 PM" src="https://user-images.githubusercontent.com/63078485/143984495-d970f8d6-a232-4a89-a466-5a4f54733657.png">
 <img width="819" alt="Screen Shot 2021-11-29 at 8 11 35 PM" src="https://user-images.githubusercontent.com/63078485/143984523-e4deaa95-cff3-4310-8a50-353c2118ee20.png">
+![image](https://user-images.githubusercontent.com/73146586/144115461-c67b2921-bfa8-4f93-b546-84ccaeef9c5b.png)
 
  ## Installation/Usage
  ```to install this program: git clone https://github.com/cs100/final-project-whe038-ashai014-npasr001-mneru002.git```
  
  ```to run program: cmake3. ; make ; ./questionnaire (used as seperate comnmands) ```
  ## Testing
- > * Our project was validated through Github Actions and unit testing. Our status badge for Github Actions is on the top of the README.
+ * Our project was validated through Github Actions and unit testing. Our status badge for Github Actions is on the top of the README.
  
