@@ -52,7 +52,9 @@
  ## Screenshots
 <img width="829" alt="Screen Shot 2021-11-29 at 8 11 18 PM" src="https://user-images.githubusercontent.com/63078485/143984495-d970f8d6-a232-4a89-a466-5a4f54733657.png">
 <img width="819" alt="Screen Shot 2021-11-29 at 8 11 35 PM" src="https://user-images.githubusercontent.com/63078485/143984523-e4deaa95-cff3-4310-8a50-353c2118ee20.png">
-![144115461-c67b2921-bfa8-4f93-b546-84ccaeef9c5b](https://user-images.githubusercontent.com/73146586/144115519-b4064579-e6c6-44fb-9b7e-a417a15970ba.png)
+![valgrind](https://user-images.githubusercontent.com/73146586/144117727-77117f6b-689e-4a18-b1e9-631dae061b21.png)
+
+
 
 
  ## Installation/Usage
@@ -60,5 +62,5 @@
  
  ```to run program: cmake3 . ; make ; ./questionnaire (used as seperate comnmands) ```
  ## Testing
- * Our project was validated through Github Actions and GoogleTests. We tested the project by creating unit tests via the google test submodule. We then used Github Actions so that our project is automated for building, testing, and deployment when we push or pull our remote branches. Our status badge for Github Actions is on the top of the README.
+ * Our project was validated through GitHub Actions and GoogleTests. We tested the project by creating unit tests via the google test submodule. We then used GitHub Actions so that our project is automated for building, testing, and deployment when we push or pull our remote branches. Our status badge for Github Actions is on the top of the README.
  
