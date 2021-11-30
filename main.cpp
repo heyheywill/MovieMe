@@ -32,10 +32,9 @@ int main() {
 	//testing.printMovies(std::cout);
 	//testing main.yml	
 
-	cout << "Would you like to be reccomended movies via actor (1), genre (2), or rating (3)?" << endl;
+	cout << "Would you like to be reccomended movies via actor (1), genre (2), rating (3), or QUIT (4)" << endl;
 	
 	int answer = 0;
-	cin >> answer;
 
 	vector<string> myvec = testQues.returnAnswers();
 	byGenre test1(testing.movieList, myvec);
@@ -48,16 +47,27 @@ int main() {
 
 	Outputter out;	
 
-	switch (answer) {
+	while(cin >> answer) {
+		if(answer == 1) {
+			out.outputByActor(myActorList);
+			cout << "Would you like to be reccomended movies via actor (1), genre (2), rating (3), or QUIT (4)" << endl;
 	
-	case 1:
-		out.outputByGenre(myList);
-		break;
-	case 2:
-		out.outputByActor(myActorList);
-		break;
-	case 3:
-		out.outputByRating(myRatingList);
-		break;
+		}
+		else if(answer == 2) {
+			out.outputByGenre(myList);
+			cout << "Would you like to be reccomended movies via actor (1), genre (2), rating (3), or QUIT (4)" << endl;
+	
+		}
+		else if(answer == 3) {
+			out.outputByActor(myActorList);
+			cout << "Would you like to be reccomended movies via actor (1), genre (2), rating (3), or QUIT (4)" << endl;
+	
+		}
+		else if(answer == 4) {
+			break;
+		}
+		else {
+			cout << "Please enter a valid # : actor (1), genre (2), rating (3), or QUIT (4)"<< endl;
+		}
 	}
 }
