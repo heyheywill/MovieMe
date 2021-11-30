@@ -44,7 +44,8 @@
  ## Screenshots
 <img width="829" alt="Screen Shot 2021-11-29 at 8 11 18 PM" src="https://user-images.githubusercontent.com/63078485/143984495-d970f8d6-a232-4a89-a466-5a4f54733657.png">
 <img width="819" alt="Screen Shot 2021-11-29 at 8 11 35 PM" src="https://user-images.githubusercontent.com/63078485/143984523-e4deaa95-cff3-4310-8a50-353c2118ee20.png">
-![valgrind](https://user-images.githubusercontent.com/73146586/144117727-77117f6b-689e-4a18-b1e9-631dae061b21.png)
+<img width="831" alt="Screen Shot 2021-11-30 at 1 25 31 PM" src="https://user-images.githubusercontent.com/63078485/144130625-a0d35003-72f5-4705-8be9-524120222efe.png">
+
 
 
 
