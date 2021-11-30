@@ -57,7 +57,7 @@
  ## Installation/Usage
  ```to install this program: git clone https://github.com/cs100/final-project-whe038-ashai014-npasr001-mneru002.git```
  
- ```to run program: cmake3. ; make ; ./questionnaire (used as seperate comnmands) ```
+ ```to run program: cmake3 . ; make ; ./questionnaire (used as seperate comnmands) ```
  ## Testing
  * Our project was validated through Github Actions and unit testing. Our status badge for Github Actions is on the top of the README.
  
