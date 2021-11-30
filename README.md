@@ -53,9 +53,13 @@
  > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+<img width="829" alt="Screen Shot 2021-11-29 at 8 11 18 PM" src="https://user-images.githubusercontent.com/63078485/143984495-d970f8d6-a232-4a89-a466-5a4f54733657.png">
+<img width="819" alt="Screen Shot 2021-11-29 at 8 11 35 PM" src="https://user-images.githubusercontent.com/63078485/143984523-e4deaa95-cff3-4310-8a50-353c2118ee20.png">
+
  ## Installation/Usage
- > Instructions on installing and running your application
+ ```to install this program: git clone https://github.com/cs100/final-project-whe038-ashai014-npasr001-mneru002.git```
+ 
+ ```to run program: cmake3. ; make ; ./questionnaire (used as seperate comnmands) ```
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
