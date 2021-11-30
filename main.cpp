@@ -59,7 +59,7 @@ int main() {
 	
 		}
 		else if(answer == 3) {
-			out.outputByActor(myActorList);
+			out.outputByRating(myRatingList);
 			cout << "Would you like to be reccomended movies via actor (1), genre (2), rating (3), or QUIT (4)" << endl;
 	
 		}
